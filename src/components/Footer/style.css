@@ -1,0 +1,239 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap');
+ 
+/* General styling for the footer */
+footer {
+    /* background-image: linear-gradient(to right, white, pink); */
+    border-top: 1px solid #e2e2e2;
+    padding: 20px 0;
+    width: 100%; /* Ensure the footer takes full width */
+}
+ 
+/* Footer container to align columns */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px; /* Adjust to increase space between columns */
+    width: 100%; /* Ensure it takes full width */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+ 
+/* div1: Align "Explore" column to the far left */
+.footer-div1 {
+    flex: 1;
+    margin-right: 10%; /* Pushes div2 to the far right */
+}
+ 
+/* div2: Container for "TOP countries" and "TOP states" */
+.footer-div2 {
+    display: flex;
+    flex-direction: row; /* Arrange countries and states side by side */
+    align-items: flex-start; /* Align items to the top of the container */
+    flex: 1;
+    gap: 20px; /* Adjust gap between countries and states sections */
+}
+ 
+/* country-div: Align "TOP countries" to the right */
+.country-div {
+    text-align: right;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+ 
+/* state-div: Align "TOP states" to the right */
+.state-div {
+    text-align: right;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+ 
+/* Footer columns styling */
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+ 
+/* Heading styles with gradient and custom font */
+.footer-heading {
+    font-family: 'Quicksand', sans-serif; /* Ensure this font is imported */
+    background: linear-gradient(to right, #8e2de2, #4a00e0); /* Gradient color */
+    -webkit-background-clip: text; /* Vendor prefix for WebKit browsers */
+    -moz-background-clip: text; /* Vendor prefix for Mozilla browsers (not required, but for completeness) */
+    -o-background-clip: text; /* Vendor prefix for Opera browsers (not required) */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* WebKit browsers */
+    color: transparent; /* Non-WebKit browsers fallback */
+    margin-bottom: 10px;
+}
+ 
+.footer-heading--main {
+    font-weight: 700; /* Make the font bold */
+    font-size: 2.5rem; /* Make the font size larger for better visibility */
+    /* background: linear-gradient(to right, #1e3c72, #2a5298); Blue to Purple gradient */
+}
+ 
+.footer-heading--sub {
+    font-weight: 700; /* Make the font bold */
+    font-size: 1.5rem; /* Adjust size as needed */
+    text-align: left;
+}
+ 
+/* Updated styling for list items in countries and states sections */
+.country-list, .state-list {
+    padding: 0;
+    list-style: none; /* Remove bullets */
+    text-align: left;
+}
+ 
+.country-list li, .state-list li {
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+    font-weight: 500; /* Semi-bold */
+    margin-bottom: 5px;
+    color: #333; /* Darker text color for better readability */
+}
+ 
+.footer-div1 .footer-heading--sub {
+    margin-left: 0;
+    text-align: left;
+}
+ 
+/* Social media icons styling */
+.social-media {
+    margin-bottom: 20px;
+}
+ 
+.social-media a {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 24px; /* Adjust the size as needed */
+    text-decoration: none;
+}
+ 
+/* Make the icons colorful */
+.social-media a.facebook {
+    color: #3b5998; /* Facebook blue */
+}
+ 
+.social-media a.instagram {
+    color: #e4405f; /* Instagram pink */
+}
+ 
+.social-media a.twitter {
+    color: #1da1f2; /* Twitter blue */
+}
+ 
+.social-media a.youtube {
+    color: #ff0000; /* YouTube red */
+}
+ 
+.social-media a.pinterest {
+    color: #e60023; /* Pinterest red */
+}
+ 
+.social-media a:hover {
+    opacity: 0.8; /* Optional: Add a hover effect */
+}
+ 
+/* Subtext styling */
+.sub-text {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+ 
+.sub-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+ 
+.sub-text a:hover {
+    text-decoration: underline;
+}
+ 
+/* Form styling */
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.footer-form input[type="email"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%; /* Adjusted width for alignment */
+}
+ 
+.footer-form button {
+    padding: 10px;
+    background: linear-gradient(to right, #007bff, #6f42c1); /* Blue to Purple gradient */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%; /* Adjusted width for alignment */
+    text-align: center;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+ 
+.footer-form button:hover {
+    background: linear-gradient(to right, #0056b3, #5a2a8c); /* Darker gradient on hover */
+}
+ 
+/* List styling */
+ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+ 
+ul li {
+    margin-bottom: 5px;
+}
+ 
+/* Media Queries for Responsive Design */
+ 
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack the footer columns vertically */
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+ 
+    .footer-div1 {
+        margin-right: 0; /* Remove margin for stacked layout */
+        margin-bottom: 20px; /* Space between columns */
+    }
+ 
+    .footer-div2 {
+        flex-direction: column; /* Stack countries and states vertically */
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+ 
+    .footer-form input[type="email"],
+    .footer-form button {
+        width: 100%; /* Full width for form elements */
+    }
+}
+ 
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .footer-heading--main {
+        font-size: 1.8rem; /* Reduce font size for smaller screens */
+    }
+ 
+    .footer-heading--sub {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+ 
+    .social-media a {
+        font-size: 20px; /* Reduce icon size */
+    }
+ 
+    .footer-form input[type="email"],
+    .footer-form button {
+        width: 100%; /* Full width for form elements */
+    }
+ 
+    .sub-text {
+        font-size: 0.8em; /* Reduce font size for smaller screens */
+    }
+}

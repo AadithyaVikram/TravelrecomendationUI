@@ -1,0 +1,104 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between image and content */
+  padding: 40px; /* Padding around the section */
+  background: linear-gradient(to right, #ffffff 0%, #ecd3ff 100%);
+  text-align: start;
+  /* height: 80vh; */
+  margin-top: 3rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.about-us-image {
+  flex: 1; /* Allow the image container to take up space */
+  max-width: 50%; /* Limit the image container's width */
+  margin-right: 20px; /* Space between image and content */
+}
+
+.about-us-image img {
+  width: 100%; /* Ensure image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.about-us-content {
+  flex: 1; /* Allow the content container to take up space */
+  padding: 20px; /* Padding inside the content container */
+  box-sizing: border-box; /* Include padding in element's total width */
+}
+
+.about-us-headline {
+  font-size: 3rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #005be4 0%, #A229FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.semiBold {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.normal {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+
+/* Responsive styles for smaller screens */
+@media (min-width: 769px) and (max-width: 997px) {
+.about-us-headline {
+  font-size: 1.5rem;
+}
+.semiBold {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+.normal {
+  font-size: .8rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+}
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px;
+  }
+
+  .about-us-image {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add margin below the image */
+  }
+
+  .about-us-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-us-headline {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+
+  .semiBold {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .normal {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}

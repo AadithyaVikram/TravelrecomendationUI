@@ -1,0 +1,90 @@
+.countries-container {
+  padding: 1rem 2rem;
+  text-align: start;
+  /* overflow-x: hidden;  */
+}
+.country-headline {
+  /* display: inline; */
+  border: 5px solid  linear-gradient(to right, #005be4, #A229FF);
+ padding-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  padding: 1rem 0.5rem;
+  color: rgb(53, 53, 53);
+  font-weight: 700;
+}
+
+.country-headline .bold-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background:  linear-gradient(to right, #005be4 0%, #A229FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.about-us-headline {
+  font-size: 3rem;
+  font-weight: 500;
+  background:  linear-gradient(to right, #005be4 0%, #A229FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+
+.recommendation-list {
+  display: flex;
+  flex-wrap: wrap; /* Ensure wrapping */
+  gap: 25px; /* Space between cards */
+  justify-content: space-evenly; /* Center align cards */
+  padding: 1rem;
+  box-sizing: border-box; 
+}
+
+.card {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 300px; /* Max width for larger screens */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  margin: 10px; /* Margin to ensure spacing */
+  transition: transform 0.3s ease;
+}
+
+.card-img {
+  width: 100%; /* Responsive image width */
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Optional: Scale effect on hover */
+}
+
+@media (max-width: 768px) {
+  .country-headline h1 {
+    font-size: 2rem; /* Responsive font size for tablets */
+  }
+
+  .recommendation-list {
+    gap: 10px; /* Reduce gap on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .country-headline h1 {
+    font-size: 1.5rem; /* Responsive font size for mobile */
+  }
+
+  .card {
+    max-width: 100%; /* Full width on mobile */
+    margin: 5px; /* Adjust margin for mobile */
+  }
+}

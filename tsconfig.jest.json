@@ -1,0 +1,6 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "jsx": "react-jsx" // Ensures TypeScript compiles JSX to React.createElement
+    }
+  }
